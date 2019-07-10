@@ -3,7 +3,6 @@ DOCKERNAME?=sigsci-lua-nginx-amazon
 DOCKERTAG?=latest
 SIGSCI_HOSTNAME?=nginx-amazon
 EXPOSE_PORT?=4000
-AGENT_CONF?=$(shell pwd)/agent.conf
 
 build:
 	docker build -t $(DOCKERUSER)/$(DOCKERNAME):$(DOCKERTAG) .
