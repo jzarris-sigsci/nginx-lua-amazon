@@ -17,6 +17,7 @@ RUN yum -y install nginx-module-lua-amzn-1.12.2
 
 # Step 2 - Install the Signal Sciences Agent Package
 RUN sudo yum -y install sigsci-agent
+COPY agent.conf /etc/sigsci/agent.conf
 
 # Step 3 - Install the sigsci module
 RUN yum -y install sigsci-module-nginx
